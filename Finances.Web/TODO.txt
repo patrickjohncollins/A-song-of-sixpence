@@ -13,43 +13,8 @@ budget transactions
 - as transactions are added during the period for the category, this amount will be reduced to zero
 - need mechanism to clear out (unspent) budgets for past periods, or otherwise add to next period
 - I don't care about past budgets, only future; you can't change the past
-- how to roll budget transactions forward that currently finish at end of year ?
+- how to roll bu
 
-budgets to add
-- pro bank 30€ / month
-- pro transport 100€/month (modulauto)
-- pro card transport 100€/month (train/plane)
-- pro restaurant budget 100/month
-- pro training, am I going to do the MS exams ?
-- perso cash 300 € / month
-- presents (annual budget ??) christmas budget ?? birthdays, sundry gifts..?
-- budgeting groceries is quite tough... very variable, many payees!
- - chez marilou, 150€/month seems a little high, 100€ is a bit little, so 120€ seems about right.  Maybe 30€ / week instead?
- - intermarché around 200€ / month
- - I think I'm going to give up on Picard and buy my meat and fish on the way home from work
- - it would be interesting to seperate between food and household supplies
- - for the remainder around 50-100€ / month
-- clothes : 150 € / month
-
-- start thinking about future big expenses
- - house move
- - travel to greece
- - scooter
- - farm
- - engagement ring
- - aeron chair, arm, supports, new keyboard, treadmill
-
-transactions
-- need to pay outstanding balance for heliopole 
-
-general todo
-- soc gen seems really expensive, I think I should change back to La Poste
-- do I have to pay extra for AGA PL?  Must ask accountant.
-- need to transfer EDF to company bank account
-- personal website on azure
-- disability / life insurance
-- mettre scooter à la casse
-- find out if the Plan Epargne Logement is really worth anything
 
 orders > ordered, budgeted, invoiced, paid
 
@@ -68,12 +33,6 @@ calculate ht from total - tva
 put bank statement lines on bank statement details view
 
 app crash when uploading a bank statement and no associated account
-
-set up an account for smartview, put all invoices into this account, payments go in as seperate transactions
-- right now I can't simply see how much money smartview owes me
-- I wonder if bank statements shouldn't go in as normal transactions?  No, that's crazy talk.
-
-I am not reinventing the wheel here ?
 
 remember the filters on the transaction list page
 
