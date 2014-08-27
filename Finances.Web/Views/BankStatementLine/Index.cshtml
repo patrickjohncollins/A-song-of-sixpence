@@ -1,0 +1,127 @@
+﻿@model IEnumerable<Finances.Data.Banking.BankStatementLine>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<style type="text/css">
+    tr.preexisting {
+        text-decoration: line-through;
+        color: darkgrey;
+    }
+
+
+</style>
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Statement.ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.TransactionID)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Memo)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.IncorrectTransactionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionCorrectionAction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ServerTransactionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferenceNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PayeeID)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Currency)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="@(item.Preexisting ? "preexisting" : null)">
+        <td>
+            @Html.DisplayFor(modelItem => item.Statement.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Amount)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.TransactionID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memo)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.IncorrectTransactionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransactionCorrectionAction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServerTransactionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReferenceNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PayeeID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Currency)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

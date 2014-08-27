@@ -1,0 +1,67 @@
+﻿@model Finances.Data.Banking.BankStatement
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>BankStatement</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Account.AccountID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Account.AccountID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Start)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Start)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.End)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.End)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LedgerBalance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LedgerBalance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LedgerBalanceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LedgerBalanceDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AvaliableBalance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AvaliableBalance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AvaliableBalanceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AvaliableBalanceDate)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

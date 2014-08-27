@@ -1,0 +1,65 @@
+﻿@model Finances.Data.Banking.BankStatement
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BankStatement</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Account.AccountID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Account.AccountID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Start)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Start)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.End)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.End)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LedgerBalance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LedgerBalance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.LedgerBalanceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LedgerBalanceDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AvaliableBalance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AvaliableBalance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AvaliableBalanceDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AvaliableBalanceDate)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Statement Detail", "ForStatement", "BankStatementLine", new { ID = Model.ID }, null) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

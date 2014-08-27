@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Finances.Data.Banking.BankStatement>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @Html.ActionLink("Upload", "Upload")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Account.AccountID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Start)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.End)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LedgerBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LedgerBalanceDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvaliableBalance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvaliableBalanceDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account.AccountID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Start)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.End)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LedgerBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LedgerBalanceDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvaliableBalance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvaliableBalanceDate)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID }) |
+            @Html.ActionLink("Lines", "ForStatement", "BankStatementLine", new { ID = item.ID }, null) |
+            @Html.ActionLink("Reconcile", "Reconcile", new { id = item.ID }, null)
+            @*@Html.ActionLink("Reconcile", "ForStatement", "BankReconciliation", new { ID = item.ID }, null)*@
+        </td>
+    </tr>
+}
+
+</table>

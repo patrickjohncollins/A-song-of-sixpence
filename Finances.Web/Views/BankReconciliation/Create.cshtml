@@ -1,0 +1,49 @@
+﻿@model Finances.Data.Banking.BankReconciliation
+
+@{
+    ViewBag.Title = "Reconcile Bank Statement Line to Transaction";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BankReconciliation</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankStatementLineID, "StatementLine")
+        </div>
+        <div class="editor-field">
+            @Html.ListBox("BankStatementLineID", null, new { size = 15 })
+            @*@Html.DropDownList("BankStatementLineID", String.Empty)*@
+            @Html.ValidationMessageFor(model => model.BankStatementLineID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TransactionID, "Transaction")
+        </div>
+        <div class="editor-field">
+            @Html.ListBox("TransactionID", null, new { size = 20 })
+            @*@Html.DropDownList("TransactionID", String.Empty)*@
+            @Html.ValidationMessageFor(model => model.TransactionID)
+        </div>
+
+        <p>
+            <input type="submit" value="Reconcile" />
+            <input type="button" value="Edit Transaction" onclick="window.open('/Transaction/Edit/' + $('#TransactionID').val())" />
+            <input type="button" value="Create Tranasction" onclick="window.open('/Transaction/CreateFromStatementLine/' + $('#BankStatementLineID').val())" />
+
+        </p>
+
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

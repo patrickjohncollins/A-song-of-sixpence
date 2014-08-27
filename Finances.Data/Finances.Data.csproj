@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6436250D-EAA6-4D85-9CCB-A1736DCF9FBB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Finances.Data</RootNamespace>
+    <AssemblyName>Finances.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.Extended, Version=1.0.0.57, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.Extended.1.0.0.57\lib\net45\EntityFramework.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountTransaction.cs" />
+    <Compile Include="Category.cs" />
+    <Compile Include="Migrations\201209251939362_InitialCreate.cs" />
+    <Compile Include="Migrations\201209251939362_InitialCreate.Designer.cs">
+      <DependentUpon>201209251939362_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209291235474_Ofx.cs" />
+    <Compile Include="Migrations\201209291235474_Ofx.Designer.cs">
+      <DependentUpon>201209291235474_Ofx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209291335379_ofxforeignkeys.cs" />
+    <Compile Include="Migrations\201209291335379_ofxforeignkeys.Designer.cs">
+      <DependentUpon>201209291335379_ofxforeignkeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209291337143_ofxforeignkeymove.cs" />
+    <Compile Include="Migrations\201209291337143_ofxforeignkeymove.Designer.cs">
+      <DependentUpon>201209291337143_ofxforeignkeymove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201209291515365_ofxmoneytype.cs" />
+    <Compile Include="Migrations\201209291515365_ofxmoneytype.Designer.cs">
+      <DependentUpon>201209291515365_ofxmoneytype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210120646453_TranBankStatLine.cs" />
+    <Compile Include="Migrations\201210120646453_TranBankStatLine.Designer.cs">
+      <DependentUpon>201210120646453_TranBankStatLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210131342277_BankStatLine Preexisting.cs" />
+    <Compile Include="Migrations\201210131342277_BankStatLine Preexisting.Designer.cs">
+      <DependentUpon>201210131342277_BankStatLine Preexisting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201210131913435_BankRecon.cs" />
+    <Compile Include="Migrations\201210131913435_BankRecon.Designer.cs">
+      <DependentUpon>201210131913435_BankRecon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211251542123_Transaction Foreign.cs" />
+    <Compile Include="Migrations\201211251542123_Transaction Foreign.Designer.cs">
+      <DependentUpon>201211251542123_Transaction Foreign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211251608212_Foreign Exchange Rate.cs" />
+    <Compile Include="Migrations\201211251608212_Foreign Exchange Rate.Designer.cs">
+      <DependentUpon>201211251608212_Foreign Exchange Rate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211251641427_Foreign Amount Accept Null.cs" />
+    <Compile Include="Migrations\201211251641427_Foreign Amount Accept Null.Designer.cs">
+      <DependentUpon>201211251641427_Foreign Amount Accept Null.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211301720360_exchange rate decimal precision.cs" />
+    <Compile Include="Migrations\201211301720360_exchange rate decimal precision.Designer.cs">
+      <DependentUpon>201211301720360_exchange rate decimal precision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201211301733280_foreign exchange decimal precision.cs" />
+    <Compile Include="Migrations\201211301733280_foreign exchange decimal precision.Designer.cs">
+      <DependentUpon>201211301733280_foreign exchange decimal precision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011006391_transaction account.cs" />
+    <Compile Include="Migrations\201303011006391_transaction account.Designer.cs">
+      <DependentUpon>201303011006391_transaction account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011019560_account required.cs" />
+    <Compile Include="Migrations\201303011019560_account required.Designer.cs">
+      <DependentUpon>201303011019560_account required.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011056577_account bank ref.cs" />
+    <Compile Include="Migrations\201303011056577_account bank ref.Designer.cs">
+      <DependentUpon>201303011056577_account bank ref.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011435306_orders.cs" />
+    <Compile Include="Migrations\201303011435306_orders.Designer.cs">
+      <DependentUpon>201303011435306_orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011532313_transaction order.cs" />
+    <Compile Include="Migrations\201303011532313_transaction order.Designer.cs">
+      <DependentUpon>201303011532313_transaction order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011656418_transaction invoice num.cs" />
+    <Compile Include="Migrations\201303011656418_transaction invoice num.Designer.cs">
+      <DependentUpon>201303011656418_transaction invoice num.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011702292_transaction invoice date.cs" />
+    <Compile Include="Migrations\201303011702292_transaction invoice date.Designer.cs">
+      <DependentUpon>201303011702292_transaction invoice date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303011706529_transaction tax.cs" />
+    <Compile Include="Migrations\201303011706529_transaction tax.Designer.cs">
+      <DependentUpon>201303011706529_transaction tax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303042030324_trans total tax.cs" />
+    <Compile Include="Migrations\201303042030324_trans total tax.Designer.cs">
+      <DependentUpon>201303042030324_trans total tax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303101754336_linked transactions.cs" />
+    <Compile Include="Migrations\201303101754336_linked transactions.Designer.cs">
+      <DependentUpon>201303101754336_linked transactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303101957233_foreign total.cs" />
+    <Compile Include="Migrations\201303101957233_foreign total.Designer.cs">
+      <DependentUpon>201303101957233_foreign total.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303111408145_account balance.cs" />
+    <Compile Include="Migrations\201303111408145_account balance.Designer.cs">
+      <DependentUpon>201303111408145_account balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303111441276_account banked balance.cs" />
+    <Compile Include="Migrations\201303111441276_account banked balance.Designer.cs">
+      <DependentUpon>201303111441276_account banked balance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303121539049_repeating.cs" />
+    <Compile Include="Migrations\201303121539049_repeating.Designer.cs">
+      <DependentUpon>201303121539049_repeating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303121721254_account transaction.cs" />
+    <Compile Include="Migrations\201303121721254_account transaction.Designer.cs">
+      <DependentUpon>201303121721254_account transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201303131637419_repeat prev.cs" />
+    <Compile Include="Migrations\201303131637419_repeat prev.Designer.cs">
+      <DependentUpon>201303131637419_repeat prev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Banking\BankAccount.cs" />
+    <Compile Include="Entities.cs" />
+    <Compile Include="Banking\BankStatement.cs" />
+    <Compile Include="Banking\BankStatementLine.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="SubCategory.cs" />
+    <Compile Include="Transaction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Banking\BankReconciliation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201209251939362_InitialCreate.resx">
+      <DependentUpon>201209251939362_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209291235474_Ofx.resx">
+      <DependentUpon>201209291235474_Ofx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209291335379_ofxforeignkeys.resx">
+      <DependentUpon>201209291335379_ofxforeignkeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209291337143_ofxforeignkeymove.resx">
+      <DependentUpon>201209291337143_ofxforeignkeymove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201209291515365_ofxmoneytype.resx">
+      <DependentUpon>201209291515365_ofxmoneytype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210120646453_TranBankStatLine.resx">
+      <DependentUpon>201210120646453_TranBankStatLine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210131342277_BankStatLine Preexisting.resx">
+      <DependentUpon>201210131342277_BankStatLine Preexisting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201210131913435_BankRecon.resx">
+      <DependentUpon>201210131913435_BankRecon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211251542123_Transaction Foreign.resx">
+      <DependentUpon>201211251542123_Transaction Foreign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211251608212_Foreign Exchange Rate.resx">
+      <DependentUpon>201211251608212_Foreign Exchange Rate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211251641427_Foreign Amount Accept Null.resx">
+      <DependentUpon>201211251641427_Foreign Amount Accept Null.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211301720360_exchange rate decimal precision.resx">
+      <DependentUpon>201211301720360_exchange rate decimal precision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201211301733280_foreign exchange decimal precision.resx">
+      <DependentUpon>201211301733280_foreign exchange decimal precision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011006391_transaction account.resx">
+      <DependentUpon>201303011006391_transaction account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011019560_account required.resx">
+      <DependentUpon>201303011019560_account required.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011056577_account bank ref.resx">
+      <DependentUpon>201303011056577_account bank ref.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011435306_orders.resx">
+      <DependentUpon>201303011435306_orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011532313_transaction order.resx">
+      <DependentUpon>201303011532313_transaction order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011656418_transaction invoice num.resx">
+      <DependentUpon>201303011656418_transaction invoice num.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011702292_transaction invoice date.resx">
+      <DependentUpon>201303011702292_transaction invoice date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303011706529_transaction tax.resx">
+      <DependentUpon>201303011706529_transaction tax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303042030324_trans total tax.resx">
+      <DependentUpon>201303042030324_trans total tax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303101754336_linked transactions.resx">
+      <DependentUpon>201303101754336_linked transactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303101957233_foreign total.resx">
+      <DependentUpon>201303101957233_foreign total.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303111408145_account balance.resx">
+      <DependentUpon>201303111408145_account balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303111441276_account banked balance.resx">
+      <DependentUpon>201303111441276_account banked balance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303121539049_repeating.resx">
+      <DependentUpon>201303121539049_repeating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303121721254_account transaction.resx">
+      <DependentUpon>201303121721254_account transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201303131637419_repeat prev.resx">
+      <DependentUpon>201303131637419_repeat prev.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,60 @@
+﻿@model Finances.Data.Banking.BankAccount
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BankAccount</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AccountID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AccountID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AccountType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AccountType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AccountKey)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AccountKey)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BankAccountType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BankAccountType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BankID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BankID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.BranchID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.BranchID)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Bank Statements", "ForAccount", "BankStatement", new { ID = Model.ID }, null) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

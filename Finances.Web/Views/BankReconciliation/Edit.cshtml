@@ -1,0 +1,45 @@
+﻿@model Finances.Data.Banking.BankReconciliation
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BankReconciliation</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TransactionID, "Transaction")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("TransactionID", String.Empty)
+            @Html.ValidationMessageFor(model => model.TransactionID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankStatementLineID, "StatementLine")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("BankStatementLineID", String.Empty)
+            @Html.ValidationMessageFor(model => model.BankStatementLineID)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

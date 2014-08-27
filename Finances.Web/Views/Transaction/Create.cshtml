@@ -1,0 +1,222 @@
+﻿@model Finances.Web.Models.TransactionCreateEditModel
+
+@{
+    ViewBag.Title = ViewContext.RouteData.GetRequiredString("action");
+}
+
+<h2>@ViewContext.RouteData.GetRequiredString("action")</h2>
+
+@{
+    Html.EnableClientValidation(false);
+}
+
+@using (Html.BeginForm((string)ViewBag.PostToAction, "Transaction")) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Transaction</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DebitAccountID)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.DebitAccountID, Model.DebitAccountList, String.Empty, ViewContext.RouteData.GetRequiredString("action") == "Edit" ? new { disabled="disabled" } : null)
+            @Html.ValidationMessageFor(model => model.DebitAccountID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreditAccountID)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(model => model.CreditAccountID, Model.CreditAccountList, String.Empty, ViewContext.RouteData.GetRequiredString("action") == "Edit" ? new { disabled="disabled" } : null)
+            @Html.ValidationMessageFor(model => model.CreditAccountID)
+        </div>
+
+        <div class="editor-label Business">
+            @Html.LabelFor(model => model.OrderID)
+        </div>
+        <div class="editor-field Business">
+            @Html.DropDownListFor(model => model.OrderID, Model.OrderList, String.Empty)
+            @Html.ValidationMessageFor(model => model.OrderID)
+        </div>
+
+        <div class="editor-label Business">
+            @Html.LabelFor(model => model.InvoiceNumber)
+        </div>
+        <div class="editor-field Business">
+            @Html.EditorFor(model => model.InvoiceNumber)
+            @Html.ValidationMessageFor(model => model.InvoiceNumber)
+        </div>
+
+        <div class="editor-label Business">
+            @Html.LabelFor(model => model.InvoiceDate)
+        </div>
+        <div class="editor-field Business">
+            @Html.EditorFor(model => model.InvoiceDate)
+            @Html.ValidationMessageFor(model => model.InvoiceDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Method)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Method, "AutoComplete", new { AutoCompleteSource = Url.Action("Methods") })
+            @Html.ValidationMessageFor(model => model.Method)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChequeNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChequeNumber)
+            @Html.ValidationMessageFor(model => model.ChequeNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Category, "AutoComplete", new { AutoCompleteSource = Url.Action("Categories") })
+            @Html.ValidationMessageFor(model => model.Category)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Payee)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Payee, "AutoComplete", new { AutoCompleteSource = Url.Action("Payees") })
+            @Html.ValidationMessageFor(model => model.Payee)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nature)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nature)
+            @Html.ValidationMessageFor(model => model.Nature)
+        </div>
+
+        <div class="editor-label Business">
+            @Html.LabelFor(model => model.TotalExTax)
+        </div>
+        <div class="editor-field Business">
+            @Html.EditorFor(model => model.TotalExTax)
+            @Html.ValidationMessageFor(model => model.TotalExTax)
+        </div>
+
+        <div class="editor-label Business">
+            @Html.LabelFor(model => model.TotalTax)
+        </div>
+        <div class="editor-field Business">
+            @Html.EditorFor(model => model.TotalTax)
+            @Html.ValidationMessageFor(model => model.TotalTax)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Total)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Total)
+            @Html.ValidationMessageFor(model => model.Total)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Foreign)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Foreign)
+            @Html.ValidationMessageFor(model => model.Foreign)
+        </div>
+
+        <div class="ForeignAmount">
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ForeignTotal)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ForeignTotal)
+                @Html.ValidationMessageFor(model => model.ForeignTotal)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ForeignCurrency)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ForeignCurrency)
+                @Html.ValidationMessageFor(model => model.ForeignCurrency)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.ExchangeRate)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(model => model.ExchangeRate)
+                @Html.ValidationMessageFor(model => model.ExchangeRate)
+            </div>
+
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Budget)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Budget)
+            @Html.ValidationMessageFor(model => model.Budget)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Repeat)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Repeat)
+            @Html.ValidationMessageFor(model => model.Repeat)
+        </div>
+
+        <div class="editor-label Repeat">
+            Every 
+        </div>
+        <div class="editor-field Repeat">
+            @Html.TextBoxFor(model => model.RepeatFrequency, new { @Value = 1, style="width:10px;" })
+            @Html.DropDownListFor(model => model.RepeatInterval, Model.RepeatIntervalList, String.Empty)
+            until
+            @Html.EditorFor(model => model.RepeatUntil)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DebitBanked)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DebitBanked)
+            @Html.ValidationMessageFor(model => model.DebitBanked)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CreditBanked)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CreditBanked)
+            @Html.ValidationMessageFor(model => model.CreditBanked)
+        </div>
+
+        <p>
+            <input type="submit" value="@ViewContext.RouteData.GetRequiredString("action")" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/TransactionCreateEdit.js")
+}

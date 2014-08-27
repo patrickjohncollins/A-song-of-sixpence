@@ -1,0 +1,85 @@
+﻿@model Finances.Data.Banking.BankStatement
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BankStatement</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankAccountID, "Account")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("BankAccountID", String.Empty)
+            @Html.ValidationMessageFor(model => model.BankAccountID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Start)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Start)
+            @Html.ValidationMessageFor(model => model.Start)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.End)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.End)
+            @Html.ValidationMessageFor(model => model.End)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LedgerBalance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LedgerBalance)
+            @Html.ValidationMessageFor(model => model.LedgerBalance)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.LedgerBalanceDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.LedgerBalanceDate)
+            @Html.ValidationMessageFor(model => model.LedgerBalanceDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AvaliableBalance)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AvaliableBalance)
+            @Html.ValidationMessageFor(model => model.AvaliableBalance)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AvaliableBalanceDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AvaliableBalanceDate)
+            @Html.ValidationMessageFor(model => model.AvaliableBalanceDate)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

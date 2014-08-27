@@ -1,0 +1,149 @@
+﻿@model Finances.Data.Banking.BankStatementLine
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>BankStatementLine</legend>
+
+        @Html.HiddenFor(model => model.ID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.BankStatementID, "Statement")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("BankStatementID", String.Empty)
+            @Html.ValidationMessageFor(model => model.BankStatementID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TransType)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TransType)
+            @Html.ValidationMessageFor(model => model.TransType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Amount)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Amount)
+            @Html.ValidationMessageFor(model => model.Amount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TransactionID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TransactionID)
+            @Html.ValidationMessageFor(model => model.TransactionID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Memo)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Memo)
+            @Html.ValidationMessageFor(model => model.Memo)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IncorrectTransactionID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IncorrectTransactionID)
+            @Html.ValidationMessageFor(model => model.IncorrectTransactionID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TransactionCorrectionAction)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TransactionCorrectionAction)
+            @Html.ValidationMessageFor(model => model.TransactionCorrectionAction)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ServerTransactionID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ServerTransactionID)
+            @Html.ValidationMessageFor(model => model.ServerTransactionID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CheckNum)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CheckNum)
+            @Html.ValidationMessageFor(model => model.CheckNum)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ReferenceNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ReferenceNumber)
+            @Html.ValidationMessageFor(model => model.ReferenceNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Sic)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Sic)
+            @Html.ValidationMessageFor(model => model.Sic)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PayeeID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PayeeID)
+            @Html.ValidationMessageFor(model => model.PayeeID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Currency)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Currency)
+            @Html.ValidationMessageFor(model => model.Currency)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

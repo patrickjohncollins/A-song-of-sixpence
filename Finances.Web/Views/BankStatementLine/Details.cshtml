@@ -1,0 +1,120 @@
+﻿@model Finances.Data.Banking.BankStatementLine
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>BankStatementLine</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Statement.ID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Statement.ID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TransType)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TransType)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Amount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Amount)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.TransactionID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TransactionID)
+    </div>*@
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Memo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Memo)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.IncorrectTransactionID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IncorrectTransactionID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TransactionCorrectionAction)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TransactionCorrectionAction)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ServerTransactionID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ServerTransactionID)
+    </div>*@
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CheckNum)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CheckNum)
+    </div>
+
+    @*<div class="display-label">
+         @Html.DisplayNameFor(model => model.ReferenceNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReferenceNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Sic)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Sic)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PayeeID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PayeeID)
+    </div>*@
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Currency)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Currency)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

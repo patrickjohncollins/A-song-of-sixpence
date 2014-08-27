@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+Transactions : 
+@Html.ActionLink("All", "Index", "Transaction")
+@Html.ActionLink("Current Month", "Index", "Transaction", new { Year = DateTime.Now.Year, Month = DateTime.Now.Month }, null)
+@Html.ActionLink("Create", "Create", "Transaction")
+
+
+<br />
+@Html.ActionLink("Accounts", "Index", "Account")
+<br />
+@Html.ActionLink("Orders", "Index", "Order")
+<br />
+@Html.ActionLink("Bank Accounts", "Index", "BankAccount")
+<br />
+@Html.ActionLink("Bank Statements", "Index", "BankStatement")
+@Html.ActionLink("Upload", "Upload", "BankStatement")
+<br />
+@Html.ActionLink("Bank Statement Details", "Index", "BankStatementLine")
+<br />
+@Html.ActionLink("Bank Reconciliations", "Index", "BankReconciliation")
+

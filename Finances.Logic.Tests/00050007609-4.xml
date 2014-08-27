@@ -1,0 +1,709 @@
+<OFX>
+  <SIGNONMSGSRSV1>
+    <SONRS>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <DTSERVER>20120927225542</DTSERVER>
+      <LANGUAGE>FRA</LANGUAGE>
+    </SONRS>
+  </SIGNONMSGSRSV1>
+  <BANKMSGSRSV1>
+    <STMTTRNRS>
+      <TRNUID>00</TRNUID>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <STMTRS>
+        <CURDEF>EUR</CURDEF>
+        <BANKACCTFROM>
+          <BANKID>30003</BANKID>
+          <BRANCHID>01428</BRANCHID>
+          <ACCTID>00050007609</ACCTID>
+          <ACCTTYPE>CHECKING</ACCTTYPE>
+        </BANKACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20120821</DTSTART>
+          <DTEND>20120926</DTEND>
+          <STMTTRN>
+            <TRNTYPE>CREDIT</TRNTYPE>
+            <DTPOSTED>20120827</DTPOSTED>
+            <TRNAMT>2000</TRNAMT>
+            <FITID>2061443245</FITID>
+            <NAME>VIR RECU    0000021528240</NAME>
+            <MEMO>DE: MONSIEUR PATRICK JOHN COLLIMOTIF: Paie                    REF: 0000023 001</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120828</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2062017995</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB SG 27/08</NAME>
+            <MEMO>19H55    MONTPELLIER LA LOGE 00907005</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120830</DTPOSTED>
+            <TRNAMT>-20</TRNAMT>
+            <FITID>2063040801</FITID>
+            <NAME>CHEQUE      20</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120831</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2063706433</FITID>
+            <NAME>PRLV PEL 01428T1254601038</NAME>
+            <MEMO>DU 31/08/2012                 SOLDE :     375,00</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120831</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2063706434</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB 31/08 08</NAME>
+            <MEMO>H24       CRCA DU LANGUEDOC 08657664</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>510</TRNAMT>
+            <FITID>2065673394</FITID>
+            <NAME>VERSEMENT EXPRESS 3110518376</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>CREDIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>406</TRNAMT>
+            <FITID>2065673395</FITID>
+            <NAME>REMISE CHEQUE       0000002 248</NAME>
+            <MEMO>DE    1 CHQ 01428</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-3.62</TRNAMT>
+            <FITID>2065673396</FITID>
+            <NAME>CARTE X0912 12/08 RELAIS ABRIVAD</NAME>
+            <MEMO>O</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-4.13</TRNAMT>
+            <FITID>2065673397</FITID>
+            <NAME>CARTE X0912 27/08 PAYPAL</NAME>
+            <MEMO>COMMERCE ELECTRONIQUE</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-7.13</TRNAMT>
+            <FITID>2065673401</FITID>
+            <NAME>CARTE X0912 15/08 CARREFOUR CITY</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-9.5</TRNAMT>
+            <FITID>2065673403</FITID>
+            <NAME>CARTE X0912 26/08 RELAY 341008</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-11.16</TRNAMT>
+            <FITID>2065673405</FITID>
+            <NAME>CARTE X0912 13/08 COLLER LOUISE</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-15.48</TRNAMT>
+            <FITID>2065673407</FITID>
+            <NAME>CARTE X0912 12/08 AMAZON EU SARL</NAME>
+            <MEMO>COMMERCE ELECTRONIQUE</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-22.5</TRNAMT>
+            <FITID>2065673409</FITID>
+            <NAME>CARTE X0912 21/08 RAJASTHANI</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-21.03</TRNAMT>
+            <FITID>2065673416</FITID>
+            <NAME>CARTE X0912 22/08 WICKED WEASEL</NAME>
+            <MEMO>25,00 AUD AUSTRALIE            1 EUR=1,1888 AUD</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-11.79</TRNAMT>
+            <FITID>2065673415</FITID>
+            <NAME>CARTE X0912 20/08 IPS</NAME>
+            <MEMO>9,25 GBP ROYAUME-UNI           1 EUR=0,7846 GBP</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-273.11</TRNAMT>
+            <FITID>2065673414</FITID>
+            <NAME>CARTE X0912 14/08 EUROPCAR</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-79.21</TRNAMT>
+            <FITID>2065673413</FITID>
+            <NAME>CARTE X0912 24/08 MICOLAS</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-67</TRNAMT>
+            <FITID>2065673412</FITID>
+            <NAME>CARTE X0912 29/07 SNCF INTERNET</NAME>
+            <MEMO>COMMERCE ELECTRONIQUE</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-34.04</TRNAMT>
+            <FITID>2065673411</FITID>
+            <NAME>CARTE X0912 11/08 MICOLAS</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-22.99</TRNAMT>
+            <FITID>2065673410</FITID>
+            <NAME>CARTE X0912 04/08 GO SPORT FRANC</NAME>
+            <MEMO>E</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-21.19</TRNAMT>
+            <FITID>2065673408</FITID>
+            <NAME>CARTE X0912 06/08 MICOLAS</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-15.2</TRNAMT>
+            <FITID>2065673406</FITID>
+            <NAME>CARTE X0912 04/08 LIBRAIRIE GIBE</NAME>
+            <MEMO>RT</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-9.65</TRNAMT>
+            <FITID>2065673404</FITID>
+            <NAME>CARTE X0912 14/08 MONOPRIX</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-9.45</TRNAMT>
+            <FITID>2065673402</FITID>
+            <NAME>CARTE X0912 04/08 RELAY 341008</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-6.69</TRNAMT>
+            <FITID>2065673400</FITID>
+            <NAME>CARTE X0912 20/08 CARREFOUR  CIT</NAME>
+            <MEMO>Y</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-5.94</TRNAMT>
+            <FITID>2065673399</FITID>
+            <NAME>CARTE X0912 03/08 CARREFOUR CITY</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120904</DTPOSTED>
+            <TRNAMT>-5.62</TRNAMT>
+            <FITID>2065673398</FITID>
+            <NAME>CARTE X0912 08/08 CARREFDAC VEDA</NAME>
+            <MEMO>S</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-100</TRNAMT>
+            <FITID>2066666205</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB SG 05/09</NAME>
+            <MEMO>10H53    MONTPELLIER LA LOGE 00907011</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-1.32</TRNAMT>
+            <FITID>2066666206</FITID>
+            <NAME>FRAIS PAIEMENT HORS ZONE EURO</NAME>
+            <MEMO>1 PAIEMENT  A   1,00 EUR NT            11,79 EUR A    2,70</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-80</TRNAMT>
+            <FITID>2066666208</FITID>
+            <NAME>CHEQUE      21</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-1.57</TRNAMT>
+            <FITID>2066666207</FITID>
+            <NAME>FRAIS PAIEMENT HORS ZONE EURO</NAME>
+            <MEMO>1 PAIEMENT  A   1,00 EUR NT            21,03 EUR A    2,70</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-33.06</TRNAMT>
+            <FITID>2066666211</FITID>
+            <NAME>PRELEVEMENT 6795490122  NUMERICA</NAME>
+            <MEMO>BLE (02)  86115679-M095F9Z21      050912     86115679</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-25.5</TRNAMT>
+            <FITID>2066666210</FITID>
+            <NAME>PRELEVEMENT 6796135531  AMV</NAME>
+            <MEMO>0912 04718536 12989975 18041114J03623 05092</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120905</DTPOSTED>
+            <TRNAMT>-18.76</TRNAMT>
+            <FITID>2066666209</FITID>
+            <NAME>PRELEVEMENT 6796779890  MUTUELLE</NAME>
+            <MEMO>NAT. M.C.*COTIS. MCD  0000662799  SIAM  *                0000660975P</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120907</DTPOSTED>
+            <TRNAMT>-141</TRNAMT>
+            <FITID>2068059096</FITID>
+            <NAME>CHEQUE      22</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120917</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2072383323</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB SG 15/09</NAME>
+            <MEMO>09H54    MONTPELLIER LA LOGE 00907011</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120917</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2072383324</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB 16/09 16</NAME>
+            <MEMO>H36       CRCA DU LANGUEDOC 08657664</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120917</DTPOSTED>
+            <TRNAMT>-62</TRNAMT>
+            <FITID>2072383325</FITID>
+            <NAME>PRELEVEMENT 7974083429  GDF SUEZ</NAME>
+            <MEMO>5000211324610005049*06271</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120919</DTPOSTED>
+            <TRNAMT>-0.4</TRNAMT>
+            <FITID>2073928395</FITID>
+            <NAME>OPTION TRANQUILLITE - JAZZ PRO</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120919</DTPOSTED>
+            <TRNAMT>-6.16</TRNAMT>
+            <FITID>2073928396</FITID>
+            <NAME>JAZZ REDUCTION JAZZ PRO -20%</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120919</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2073928397</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB 18/09 15</NAME>
+            <MEMO>H37       CRCA DU LANGUEDOC 08657664</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120921</DTPOSTED>
+            <TRNAMT>-5</TRNAMT>
+            <FITID>2075315919</FITID>
+            <NAME>CHEQUE      14</NAME>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20120924</DTPOSTED>
+            <TRNAMT>-50</TRNAMT>
+            <FITID>2075996715</FITID>
+            <NAME>CARTE X0912 RETRAIT DAB 23/09 14</NAME>
+            <MEMO>H55       LA BANQUE POSTALE 341721</MEMO>
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>2031.32</BALAMT>
+          <DTASOF>20120926</DTASOF>
+        </LEDGERBAL>
+        <AVAILBAL>
+          <BALAMT>2031.32</BALAMT>
+          <DTASOF>20120926</DTASOF>
+        </AVAILBAL>
+      </STMTRS>
+    </STMTTRNRS>
+  </BANKMSGSRSV1>
+  <CREDITCARDMSGSRSV1>
+    <CCSTMTTRNRS>
+      <TRNUID>00</TRNUID>
+      <STATUS>
+        <CODE>0</CODE>
+        <SEVERITY>INFO</SEVERITY>
+      </STATUS>
+      <CCSTMTRS>
+        <CURDEF>EUR</CURDEF>
+        <CCACCTFROM>
+          <ACCTID>000004973019590570912</ACCTID>
+        </CCACCTFROM>
+        <BANKTRANLIST>
+          <DTSTART>20120821</DTSTART>
+          <DTEND>20120926</DTEND>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120830</DTUSER>
+            <TRNAMT>-5.5</TRNAMT>
+            <FITID>001</FITID>
+            <NAME>LE W</NAME>
+            <MEMO>20120830</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120902</DTUSER>
+            <TRNAMT>-69.17</TRNAMT>
+            <FITID>002</FITID>
+            <NAME>AGIP9551TOURNZY</NAME>
+            <MEMO>20120902</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120902</DTUSER>
+            <TRNAMT>-5.95</TRNAMT>
+            <FITID>003</FITID>
+            <NAME>E.LECLERC STATI</NAME>
+            <MEMO>20120902</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120901</DTUSER>
+            <TRNAMT>-13.5</TRNAMT>
+            <FITID>004</FITID>
+            <NAME>BUFFET LANGUEDO</NAME>
+            <MEMO>20120901</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120902</DTUSER>
+            <TRNAMT>-12.5</TRNAMT>
+            <FITID>005</FITID>
+            <NAME>VOLCAREST</NAME>
+            <MEMO>20120902</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120903</DTUSER>
+            <TRNAMT>-4.57</TRNAMT>
+            <FITID>006</FITID>
+            <NAME>AGIP9551TOURNZY</NAME>
+            <MEMO>20120903</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120903</DTUSER>
+            <TRNAMT>-59</TRNAMT>
+            <FITID>007</FITID>
+            <NAME>LE CHAT PERCHE</NAME>
+            <MEMO>20120903</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120902</DTUSER>
+            <TRNAMT>-66.6</TRNAMT>
+            <FITID>008</FITID>
+            <NAME>AUTOROUTE DU SU</NAME>
+            <MEMO>20120902</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120905</DTUSER>
+            <TRNAMT>-12.3</TRNAMT>
+            <FITID>009</FITID>
+            <NAME>CHEZ PATRICE</NAME>
+            <MEMO>20120905</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120905</DTUSER>
+            <TRNAMT>-25.92</TRNAMT>
+            <FITID>010</FITID>
+            <NAME>COLLER LOUISE</NAME>
+            <MEMO>20120905</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120905</DTUSER>
+            <TRNAMT>-9.65</TRNAMT>
+            <FITID>011</FITID>
+            <NAME>MONOPRIX</NAME>
+            <MEMO>20120905</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120906</DTUSER>
+            <TRNAMT>-48.6</TRNAMT>
+            <FITID>012</FITID>
+            <NAME>PHARMACIE SHD</NAME>
+            <MEMO>20120906</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120906</DTUSER>
+            <TRNAMT>-39.4</TRNAMT>
+            <FITID>013</FITID>
+            <NAME>EL CHIVITO MTP</NAME>
+            <MEMO>20120906</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120904</DTUSER>
+            <TRNAMT>-66.89</TRNAMT>
+            <FITID>014</FITID>
+            <NAME>AMAZON S.E.</NAME>
+            <MEMO>20120904</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120909</DTUSER>
+            <TRNAMT>-90.71</TRNAMT>
+            <FITID>015</FITID>
+            <NAME>MICOLAS</NAME>
+            <MEMO>20120909</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120912</DTUSER>
+            <TRNAMT>-15</TRNAMT>
+            <FITID>016</FITID>
+            <NAME>ROCKSHOP</NAME>
+            <MEMO>20120912</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120912</DTUSER>
+            <TRNAMT>-29.95</TRNAMT>
+            <FITID>017</FITID>
+            <NAME>UNI RE CYCLE</NAME>
+            <MEMO>20120912</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120914</DTUSER>
+            <TRNAMT>-30.5</TRNAMT>
+            <FITID>018</FITID>
+            <NAME>LA TOMATE</NAME>
+            <MEMO>20120914</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120915</DTUSER>
+            <TRNAMT>-10.2</TRNAMT>
+            <FITID>019</FITID>
+            <NAME>MAISON CANTALOU</NAME>
+            <MEMO>20120915</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120917</DTUSER>
+            <TRNAMT>-20</TRNAMT>
+            <FITID>020</FITID>
+            <NAME>ETS ARMAND</NAME>
+            <MEMO>20120917</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120917</DTUSER>
+            <TRNAMT>-42</TRNAMT>
+            <FITID>021</FITID>
+            <NAME>MONEYBOOKERS EU</NAME>
+            <MEMO>20120917</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120915</DTUSER>
+            <TRNAMT>-73.98</TRNAMT>
+            <FITID>022</FITID>
+            <NAME>RYANAIR     GGZ</NAME>
+            <MEMO>20120915</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120918</DTUSER>
+            <TRNAMT>-11.07</TRNAMT>
+            <FITID>023</FITID>
+            <NAME>LA CLOCHE A FRO</NAME>
+            <MEMO>20120918</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120918</DTUSER>
+            <TRNAMT>-47.82</TRNAMT>
+            <FITID>024</FITID>
+            <NAME>MICOLAS</NAME>
+            <MEMO>20120918</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120918</DTUSER>
+            <TRNAMT>-59</TRNAMT>
+            <FITID>025</FITID>
+            <NAME>POIVRE ET SEL</NAME>
+            <MEMO>20120918</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120919</DTUSER>
+            <TRNAMT>-57.41</TRNAMT>
+            <FITID>026</FITID>
+            <NAME>PAYPAL</NAME>
+            <MEMO>20120919</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120921</DTUSER>
+            <TRNAMT>-75.2</TRNAMT>
+            <FITID>027</FITID>
+            <NAME>EXP SPELEMAT</NAME>
+            <MEMO>20120921</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120923</DTUSER>
+            <TRNAMT>-8.2</TRNAMT>
+            <FITID>028</FITID>
+            <NAME>SNCF</NAME>
+            <MEMO>20120923</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120921</DTUSER>
+            <TRNAMT>-16.4</TRNAMT>
+            <FITID>029</FITID>
+            <NAME>SNCF</NAME>
+            <MEMO>20120921</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120923</DTUSER>
+            <TRNAMT>-5.9</TRNAMT>
+            <FITID>030</FITID>
+            <NAME>RELAY 341008</NAME>
+            <MEMO>20120923</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120924</DTUSER>
+            <TRNAMT>-51.36</TRNAMT>
+            <FITID>031</FITID>
+            <NAME>MICOLAS</NAME>
+            <MEMO>20120924</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120924</DTUSER>
+            <TRNAMT>-18.9</TRNAMT>
+            <FITID>032</FITID>
+            <NAME>FNAC</NAME>
+            <MEMO>20120924</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120924</DTUSER>
+            <TRNAMT>-23.7</TRNAMT>
+            <FITID>033</FITID>
+            <NAME>COLLER LOUISE</NAME>
+            <MEMO>20120924</MEMO>
+          </STMTTRN>
+          <STMTTRN>
+            <TRNTYPE>DEBIT</TRNTYPE>
+            <DTPOSTED>20121003</DTPOSTED>
+            <DTUSER>20120923</DTUSER>
+            <TRNAMT>-15</TRNAMT>
+            <FITID>034</FITID>
+            <NAME>BARBEROUSSE</NAME>
+            <MEMO>20120923</MEMO>
+          </STMTTRN>
+        </BANKTRANLIST>
+        <LEDGERBAL>
+          <BALAMT>-1141.85</BALAMT>
+          <DTASOF>20120927</DTASOF>
+        </LEDGERBAL>
+        <AVAILBAL>
+          <BALAMT>-1141.85</BALAMT>
+          <DTASOF>20120927</DTASOF>
+        </AVAILBAL>
+      </CCSTMTRS>
+    </CCSTMTTRNRS>
+  </CREDITCARDMSGSRSV1>
+</OFX>

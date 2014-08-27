@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Finances.Web.Models.BankReconciliationListModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table border="1">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TransactionDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankStatementLineDescription)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TransactionDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankStatementLineDescription)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

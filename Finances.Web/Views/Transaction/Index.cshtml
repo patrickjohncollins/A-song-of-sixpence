@@ -1,0 +1,255 @@
+﻿@model Finances.Web.Models.TransactionListModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Html.BeginForm()) {
+    <fieldset>
+        <legend>Filter Results</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AccountID)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("AccountID", String.Empty)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.OrderID)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("OrderID", String.Empty)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.InvoiceNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.InvoiceNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Year)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Year)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Quarter)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Quarter)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Month)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Month)
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Method)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Method, "AutoComplete", new { AutoCompleteSource = Url.Action("Methods") })
+        </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ChequeNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ChequeNumber)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Category)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Category, "AutoComplete", new { AutoCompleteSource = Url.Action("Categories") })
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Payee)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Payee, "AutoComplete", new { AutoCompleteSource = Url.Action("Payees") })
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Budget)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("Budget", String.Empty)
+        </div>
+
+        <p>
+            <input type="submit" value="Filter" />
+        </p>
+    </fieldset>
+}
+
+<table>
+    <tr>
+        <th>
+            Account
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Banked)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Debit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Credit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Method)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.ChequeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Payee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Nature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].TotalExTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].TotalTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Balance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountTransactions[0].Transaction.Budget)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.AccountTransactions) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Account.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Banked)
+        </td>
+
+        @if (item.Debit == 0) {
+            @:<td align="middle">-</td>
+        } else {
+            @:<td align="right">
+            @Html.DisplayFor(modelItem => item.Debit)
+            @:</td>
+        }
+
+        @if (item.Credit == 0) {
+            @:<td align="middle">-</td>
+        } else {
+            @:<td align="right">
+            @Html.DisplayFor(modelItem => item.Credit)
+            @:</td>
+        }
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Method)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.ChequeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Payee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Nature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalExTax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalTax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Budget)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TransactionID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TransactionID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TransactionID })
+        </td>
+    </tr>
+}
+
+    <tr style="font-weight:bold">
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+            @ViewBag.SumDebit.ToString("C")
+        </td>
+        <td>
+            @ViewBag.SumCredit.ToString("C")
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+            @ViewBag.SumTotalExTax.ToString("C")
+        </td>
+        <td>
+            @ViewBag.SumTotalTax.ToString("C")
+        </td>
+        <td>
+            @ViewBag.SumTotal.ToString("C")
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+    </tr>
+
+</table>

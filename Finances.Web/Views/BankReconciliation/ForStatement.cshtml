@@ -1,0 +1,180 @@
+﻿@model IEnumerable<Finances.Data.Banking.BankReconciliation>
+
+@{
+    ViewBag.Title = "TODO Reconcile Statement";
+}
+
+<h2>Reconcile Statement</h2>
+
+<table>
+    <tr>
+
+        
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.TransType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.CheckNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Amount)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.StatementLine.TransactionID)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Memo)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.StatementLine.IncorrectTransactionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.TransactionCorrectionAction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.ServerTransactionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.ReferenceNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Sic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.PayeeID)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.StatementLine.Currency)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Date)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Method)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.ChequeNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Payee)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Nature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Transaction.Budget)
+        </th>
+
+
+
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+
+@*        <td>
+            @Html.DisplayFor(modelItem => item.BankStatementLineID)
+        </td>*@
+
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.TransType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.CheckNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Amount)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.StatementLine.TransactionID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Memo)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.StatementLine.IncorrectTransactionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.TransactionCorrectionAction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.ServerTransactionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.ReferenceNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Sic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.PayeeID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.StatementLine.Currency)
+        </td>
+
+        @*        <td>
+            @Html.DisplayFor(modelItem => item.TransactionID)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Date)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Method)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.ChequeNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Payee)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Nature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Transaction.Budget)
+        </td>
+
+
+        <td>
+
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

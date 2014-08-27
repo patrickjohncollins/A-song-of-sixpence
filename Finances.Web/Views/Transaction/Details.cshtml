@@ -1,0 +1,99 @@
+﻿@model Finances.Data.Transaction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Transaction</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Banked)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Banked)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Debit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Debit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Credit)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Credit)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Method)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Method)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ChequeNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ChequeNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Payee)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Payee)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nature)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nature)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Total)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Total)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Balance)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Balance)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Budget)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Budget)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
